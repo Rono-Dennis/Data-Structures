@@ -25,10 +25,11 @@ public class SumZero {
 
             }
 
-            // Print a extra 0 if N is odd
-            if (N % 2 == 1)
+            if// Print a extra 0 if N is odd
+             (N % 2 == 1)
                 System.out.print(0);
 
+            System.out.println("\n division gives: "+y);
             return  result;
         }
 

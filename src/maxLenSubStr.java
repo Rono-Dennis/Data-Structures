@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class longeststring{
+class maxLenSubStr{
     static int maxLenSubStr(String s)
     {
         if (s.length() < 3)

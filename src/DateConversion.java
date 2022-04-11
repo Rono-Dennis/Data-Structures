@@ -5,7 +5,7 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-class largestalphabet {
+class DateConversion {
 
     public static void main(String[] args) {
         Date dt = new Date();

@@ -76,8 +76,8 @@ public class test {
                 neg++;
             }
         }
-        System.out.println(pos / (double) n);
-        System.out.println(neg / (double) n);
-        System.out.println(zero / (double) n);
+        System.out.println("pos output"+pos / (double) n);
+        System.out.println("neq output"+neg / (double) n);
+        System.out.println("zero output"+zero / (double) n);
     }
 }
