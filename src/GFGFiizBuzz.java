@@ -10,11 +10,11 @@ public class GFGFiizBuzz {
                 c3++;
                 c5++;
                 if (c3 == 3) {
-                    s += "fizz";
+                    s = "fizz";
                     c3 = 0;
                 }
                 if (c5 == 5) {
-                    s += "buzz";
+                    s = "buzz";
                     c5 = 0;
                 }
                 if (s.length() == 0)

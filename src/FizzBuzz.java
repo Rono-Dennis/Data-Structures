@@ -1,9 +1,10 @@
 
 public class FizzBuzz {
     public static void main(String[] args) {
+        String result;
          for(int i=1;i<100+1;i++){
             if (i%3==0){
-               String result="fizzbuzz";
+                result ="fizzbuzz";
                 System.out.println(result);
             }else
                 System.out.println(i);
