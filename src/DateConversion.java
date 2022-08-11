@@ -71,7 +71,7 @@ class DateConversion {
 
     public static String timeConversion(String s) {
         // Write your code here
-        int s1 = Integer.valueOf(s.substring(0, 2));
+        /*int s1 = Integer.valueOf(s.substring(0, 2));
         int newInt = 0;
         if(s1<12)
         {
@@ -91,8 +91,22 @@ class DateConversion {
         StringBuilder stringBuilder = new StringBuilder(newTime);
         stringBuilder.delete(stringBuilder.length() - 2, stringBuilder.length());
         String toUse = stringBuilder.toString();
-        return toUse;
+        return toUse;*/
 
+
+        String[] t = s.split(":");
+        int hour = Integer.parseInt(t[0]) % 12;
+
+        if (Character.toUpperCase(s.charAt(s.length()-2)) == 'P') {
+            hour += 12;
+        }
+
+        String hourStr = String.valueOf(hour);
+        if (hour < 10) {
+            hourStr = "0" + hourStr;
+        }
+
+        return hourStr + ":" + t[1] + ":" + t[2].substring(0,2);
     }
 
 
