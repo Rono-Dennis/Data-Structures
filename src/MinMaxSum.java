@@ -1,6 +1,5 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.math.BigInteger;
+import java.util.*;
 
 /*Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
 
@@ -84,19 +83,19 @@ public class MinMaxSum {
         //System.out.println(arr);
 
         // Write your code here
-        int sum=0;
+        long sum= 0;
         for(int i=0;i<arr.size();i++){
-            //System.out.println(arr.get(i));
+            System.out.println(arr.get(i));
             sum += arr.get(i);
 
         }
-        //System.out.println(sum);
+        System.out.println(sum);
 
         arr.add(0,size1);
         arr.remove(arr.size() - 1);
         int sum2= 0;
         for(int j=0;j<arr.size();j++){
-            //System.out.println(arr.get(i));
+//            System.out.println(arr.get(i));
             sum2 += arr.get(j);
 
         }
@@ -107,19 +106,38 @@ public class MinMaxSum {
 
         System.out.print(sum2);
         System.out.print(" ");
-        System.out.print(sum);
+        System.out.print(sum+"\n");
 
         return false;
     }
 
     public static void main(String[] args) {
         List<Integer> values = new ArrayList<>();
-        values.add(1);
-        values.add(2);
-        values.add(3);
-        values.add(4);
-        values.add(5);
+        values.add(256741038);
+        values.add(623958417);
+        values.add(467905213);
+        values.add(714532089);
+        values.add(938071625);
 
         System.out.println(miniMaxSum(values));
     }
+
+    /*public static void main(String[] args) {
+        System.out.println("Enter Value: ");
+        Scanner in=new Scanner(System.in);
+        long[] m=new long[5];
+        for(int i=0;i<5;i++){
+            m[i]=in.nextLong();
+        }
+        Arrays.sort(m);
+        long x=0;
+        long y=0;
+        for(int i=0;i<4;i++){
+            x+=m[i];
+        }
+        for(int i=1;i<5;i++){
+            y+=m[i];
+        }
+        System.out.println(x+" "+y);
+    }*/
 }
