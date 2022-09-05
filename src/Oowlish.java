@@ -1,20 +1,17 @@
+/*
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Oowlish {
 
-    package com.codesignal;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-
-    /**
+    */
+/**
      * A container of integers that should support
      * elements addition, removal, and search of the median element
-     */
+     *//*
+
     public class ContainerImpl implements Container {
         ArrayList<Integer> arr;
         HashMap<Integer, Integer> hash;
@@ -100,3 +97,4 @@ import java.util.List;
     }
 
 }
+*/
