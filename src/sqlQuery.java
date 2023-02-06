@@ -29,7 +29,7 @@ public class sqlQuery {
  * Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from
  *
  *
- *
+ *SELECT DISTINCT CITY FROM STATION WHERE REGEXP_LIKE(LOWER(CITY), '^[aeiou]') and  REGEXP_LIKE(LOWER(CITY), '[aeiou]$');
  *
  * SELECT DISTINCT CITY FROM STATION WHERE REGEXP_LIKE(LOWER(CITY), '^[aeiou]'); */
 
