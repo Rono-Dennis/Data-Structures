@@ -21,9 +21,17 @@ public class sqlQuery {
  union
  select * from (select distinc city, length(city) from station order by length(city) desc, city asc) where rownum =1
 
-
-
  */
+
+
+/**
+ *
+ * Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from
+ *
+ *
+ *
+ *
+ * SELECT DISTINCT CITY FROM STATION WHERE REGEXP_LIKE(LOWER(CITY), '^[aeiou]'); */
 
 
     public static void main(String[] args) {
