@@ -44,6 +44,16 @@ public class sqlQuery {
  *SELECT DISTINCT CITY FROM STATION WHERE UPPER(SUBSTR(CITY, LENGTH(CITY), 1)) NOT IN ('A','E','I','O','U') AND LOWER(SUBSTR(CITY, LENGTH(CITY),1)) NOT IN ('a','e','i','o','u');
  *
  *
+ * Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
+ *
+ * SELECT DISTINCT CITY FROM STATION WHERE
+ *  UPPER(SUBSTR(CITY, LENGTH(CITY), 1))  IN ('A','E','I','O','U') AND  LOWER(SUBSTR(CITY, LENGTH(CITY),1)) IN ('a','e','i','o','u') AND  UPPER(SUBSTR(CITY,1,1)) IN ('A','E','I','O','U') AND
+ *  LOWER(SUBSTR(CITY,1,1)) IN ('a','e','i','o','u');
+ *
+ *  Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
+ *
+ *  SELECT DISTINCT CITY FROM STATION WHERE LOWER(SUBSTR(CITY,1,1)) NOT IN ('a','e','i','o','u') OR
+ *  LOWER(SUBSTR(CITY, LENGTH(CITY),1)) NOT IN ('a','e','i','o','u');
  *  */
 
 
