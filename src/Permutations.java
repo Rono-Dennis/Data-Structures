@@ -92,5 +92,32 @@ class checkCharacters {
 //            }
 //        }
 
+
+
+
+
+        /**
+         from itertools import product
+
+         # Define the games
+         games = ["Game 1", "Game 2", "Game 3", "Game 4", "Game 5", "Game 6", "Game 7", "Game 8"]
+
+         # Define the possible outcomes for each game
+         outcomes = ["1", "X", "2"]
+
+         # Generate all permutations of the outcomes for the 8 games
+         perms = list(product(outcomes, repeat=17))
+
+         # Print the total number of permutations
+         print(f"Total permutations: {len(perms)}")
+
+         # Print all the permutations
+         for perm in perms:
+         for i, outcome in enumerate(perm):
+         print(f"{games[i]}: {outcome}")
+         print()*/
+
+
+
     }
 }

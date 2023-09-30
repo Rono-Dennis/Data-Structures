@@ -4,7 +4,7 @@ public class FizzBuzz {
         String result;
          for(int i=1;i<100+1;i++){
             if (i%3==0){
-                result ="fizzbuzz";
+                result   ="fizzbuzz";
                 System.out.println(result);
             }else
                 System.out.println(i);
